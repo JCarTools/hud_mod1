@@ -124,7 +124,8 @@ function layout(){
 }
 
 function test(){
-    //state.radar = true;
+    document.body.style.background = "#000";
+    state.radar = true;
     state.navi = true;
     layout();
     setGpsLevel(65);

@@ -177,6 +177,25 @@
   z-index:2;
 }
 
+.hud-row.compact-dual{
+  gap:6px;
+  transform:translateX(calc(-50% + 18px));
+}
+
+.hud-row.compact-dual .hud-top{
+  padding:12px 14px;
+}
+
+.hud-row.compact-dual .hud-top .hud-inner{
+  gap:8px;
+}
+
+.hud-row.compact-dual .hud-top .distance{
+  min-width:46px;
+  font-size:22px;
+  letter-spacing:0;
+}
+
 .hud-top{
   position:relative;
 
@@ -224,8 +243,7 @@
     position:absolute;
     top:47px;
     left:50%;
-    --gps-offset:-500%;
-    transform:translateX(var(--gps-offset));
+    transform:translateX(-500%);
 
     width:35px;
     height:35px;
@@ -249,10 +267,6 @@
 
 .gps.visible{
     opacity:1;
-}
-
-.gps.with-dual-hud{
-    --gps-offset:calc(-500% - 34px);
 }
 
 /* ===== шкала ===== */

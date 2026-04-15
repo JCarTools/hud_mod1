@@ -87,10 +87,10 @@
     //const remainDist = document.getElementById("remainDist");
     const road = document.getElementById("road");
     const limit = document.getElementById("limit");
-    const gpsWidget = document.getElementById("gpsWidget");
 
 
 const hudTop = document.getElementById('hudPanelTop');
+const hudRow = document.querySelector('.hud-row');
 //const turnUseTop = document.getElementById("turnUseTop");
 const distanceTop = document.getElementById("distanceTop");
 const limitTop = document.getElementById("limitTop");
@@ -120,7 +120,7 @@ function layout(){
         panel.classList.remove("both")
     }
 
-    gpsWidget.classList.toggle("with-dual-hud", dualHud)
+    hudRow.classList.toggle("compact-dual", dualHud)
 }
 
 function test(){
@@ -208,7 +208,7 @@ if ("ARAD" == data.hudSenderType){
     }
 
 
-    //test();
+    test();
 
 
 
